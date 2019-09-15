@@ -1,0 +1,53 @@
+{
+  "name": "@eyelly/vue-printer",
+  "version": "1.0.0-beta.pre.2",
+  "description": "A simple vue component for partial printing on the browser",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "webpack --env lib -w",
+    "lint": "eslint src/ --ext .ts",
+    "lint-fix": "eslint src/ --ext .ts --fix",
+    "build:clean": "node scripts/del.js",
+    "build:lib": "webpack --env lib",
+    "build:dist": "webpack --env dist",
+    "build": "npm run build:clean && npm run build:lib & npm run build:dist",
+    "publish": "npm publish --access=public --registry http://registry.npmjs.org/",
+    "unpublish": "npm unpublish @eyelly/vue-printer1.0.0-beta.pre.0 --registry http://registry.npmjs.org/"
+  },
+  "sideEffects": false,
+  "keywords": [
+    "vue",
+    "print",
+    "printer",
+    "vue-print",
+    "vue-printer"
+  ],
+  "author": "Eyelly Wu",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/node": "^12.7.4",
+    "@typescript-eslint/eslint-plugin": "^2.1.0",
+    "@typescript-eslint/parser": "^2.1.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.2.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.2",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
+  },
+  "dependencies": {
+    "@eyelly/print": "^1.0.0-beta.pre.0"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.10"
+  }
+}

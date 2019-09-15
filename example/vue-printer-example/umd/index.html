@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+  <head>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/@eyelly/vue-printer/dist"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div ref='printContent'> this is content to print </div>
+      <div> this is normal content </div>
+      <Printer :content="content">
+        <button>print</button>
+      </Printer>
+    </div>
+    <script>
+      Vue.component('Printer', Printer)
+      new Vue({
+        el: '#app',
+        computed: {
+          content() {
+            return {
+              refs: this.$refs,
+              refName: 'printContent'
+            }
+          }
+        }
+      })
+    </script>
+  </body>
+
+</html>
