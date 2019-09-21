@@ -1,6 +1,6 @@
 {
   "name": "@eyelly/vue-printer",
-  "version": "1.0.0-beta.pre.2",
+  "version": "1.0.0",
   "description": "A simple vue component for partial printing on the browser",
   "main": "lib/index.js",
   "scripts": {
@@ -12,7 +12,8 @@
     "build:dist": "webpack --env dist",
     "build": "npm run build:clean && npm run build:lib & npm run build:dist",
     "publish": "npm publish --access=public --registry http://registry.npmjs.org/",
-    "unpublish": "npm unpublish @eyelly/vue-printer1.0.0-beta.pre.0 --registry http://registry.npmjs.org/"
+    "unpublish": "npm unpublish @eyelly/vue-printer1.0.0-beta.pre.0 --registry http://registry.npmjs.org/",
+    "deprecate": "npm deprecate @eyelly/vue-printer@1.0.0-beta.pre.0 \"The current version is deprecated, please install the latest version\" --registry http://registry.npmjs.org/"
   },
   "sideEffects": false,
   "keywords": [
@@ -45,9 +46,17 @@
     "webpack-cli": "^3.3.8"
   },
   "dependencies": {
-    "@eyelly/print": "^1.0.0-beta.pre.0"
+    "@eyelly/print": "^1.0.0"
   },
   "peerDependencies": {
     "vue": "^2.6.10"
+  },
+  "homepage": "https://github.com/eyelly-wu/react-printer#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyelly-wu/react-printer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eyelly-wu/react-printer/issues"
   }
 }

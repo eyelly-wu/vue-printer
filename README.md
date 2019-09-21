@@ -27,7 +27,7 @@ Vue.component('Printer',Printer)
 
 ## Usage & Example
 
-In single-file components
+**In single-file components**
 ```javascript
 <template>
   <div>
@@ -57,7 +57,7 @@ In single-file components
 <style>
 </style>
 ```
-In HTML
+**In HTML**
 ```html
 <!doctype html>
 <html>
@@ -104,4 +104,4 @@ In HTML
 
 ## License
 
-[MIT]()
+[MIT](https://github.com/eyelly-wu/vue-printer/blob/master/LICENSE)

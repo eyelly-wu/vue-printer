@@ -13,7 +13,7 @@
   "author": "Eyelly Wu",
   "license": "MIT",
   "dependencies": {
-    "@eyelly/vue-printer": "^1.0.0-beta.pre.1",
+    "@eyelly/vue-printer": "^1.0.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
